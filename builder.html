@@ -1,0 +1,31 @@
+<head>
+  <title>Builder Game</title>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="800"> </canvas>
+
+  <img id="image" src="rotations.png" style="display: none" />
+
+  <button
+    style="
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: rgb(93, 239, 40);
+        border: 0px;
+      "
+      onClick="next()">
+  </button>
+  <button
+    style="
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: rgb(235, 9, 28);
+        border: 0px;
+      "
+      onClick="reset()">
+  </button>
+
+  <script src="game.js"></script>
+</body>
