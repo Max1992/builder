@@ -1,9 +1,9 @@
 var bricks = [];
 //bricks.push(1, 3, 2, 2, 1, 3, 2);
-bricks.push(3, 3, 2, 2, 1, 3, 2);
+bricks.push(3);
 
-var width = 5;
-var height = 6;
+var width = 20;
+var height = 10;
 var size = width * height;
 var field = new Array(size).fill(0);
 
@@ -40,8 +40,6 @@ while ((brick = bricks.shift()) && index != size) {
   }
 }
 
-var r = field.reduce((r, e, i) =>
-  (i % width ? r[r.length - 1].push(e) : r.push([e])) && r
-, []);
+// field.reverse();
 
-console.log(r);
+console.log(field);
